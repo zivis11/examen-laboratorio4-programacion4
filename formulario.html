@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title> Formulario </title>
+
+<style type="text/css">
+
+*{font-family:arial;}	
+
+h1{text-align: center;
+  font-size: 1.2em;
+  text-decoration:underline;}
+  form{text-align: center;}
+
+  div{border-style:solid;
+      border-color: green;
+      border-width: 0.2em;
+      margin-left: 10em;}
+
+</style>
+
+</head>
+
+<body>
+<br>
+<h1>LLenar el siguiente formulario </h1>
+<h1>para reservar matricula</h1>
+<br>
+<form name="formulario">
+
+<spam>Nombre</samp><input type="text" id="nombre" placeholder="Primer nombre" maxlength="15">
+<br>
+<br>
+
+<spam> Apellido </spam><input type="text" id="apellplaceholder="Primer Apellido¨ maxlength="15">
+<br>
+<br>
+
+<spam>ID </spam> <input type="text" id="id" placeholder="# de identidad" maxlength="15">
+<br>
+<br>
+
+<spam>sexo:</spam>
+<spam>Femenino </spam><input type="radio" id="femanino">
+<spam>Masculino</spam><input type="radio" id="masculino">
+<br>
+<br>
+<input type="button" onclick="activar()" value="enviar">
+</form>	
+<script>
+funtion activar(){
+var nomb=documet.getElemtById("nombre").value;
+if (nomb==¨¨) 
+{aler("Escriba su nombre");return;}
+var apelli=documet.getElementsById("apell").value;
+if (id==¨¨) 
+{alert("Escriba su # de identidad");
+return;}
+var id =documet.getElementsById("id").value;
+if (id==¨¨) 
+{alert("Escriba su # de identidad");
+return;}
+var sex=documet.getElementsById("femenino");
+var sex=documet.getElementsById("masculino");
+if ((!sex.check)&&(!sex.checked))
+{alert("selecionar tipo de sexo");
+return;}	
+}	
+</script>
+
+</body>
+</html>
+
+<a href="index.html">Pagina principal</a>
